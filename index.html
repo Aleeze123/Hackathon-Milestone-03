@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aleeza's Dynamic Resume Builder</title>
+  <style>
+    .resume-container {
+      width: 90%;
+      max-width: 800px;
+      text-align: center;
+      margin: 0 auto;
+      padding: 20px;
+      box-sizing: border-box;
+      border: 2px solid #bebebe;
+      box-shadow: 0 0 10px rgba(2, 48, 146, 0.1);
+      background-color: #fefefe;
+    }
+    .resume-header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+    .resume-section {
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #9a8d99;
+    }
+    .resume-section h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .hidden {
+      display: none;
+    }
+
+    /* Button Styling */
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      color: white;
+      background-color: #083765; /* Dark Blue */
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    /* Button Hover Effect */
+    button:hover {
+      background-color: #002244; 
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="resume-container">
+    <h1>Milestone 03: Dynamic Resume Builder</h1>
+    <section>
+
+      <h2>Generate Your Resume</h2>
+      <form id="resumeForm">
+        <label>Name: <input type="text" id="name" required></label><br><br>
+        <label>Email: <input type="email" id="email" required></label><br><br>
+        <label>Phone: <input type="text" id="phone" required></label><br><br>
+        <label>Profile Photo: <input type="file" id="photo"></label><br><br>
+        <label>Address: <textarea id="address" required></textarea></label><br><br>
+        <label>Institution: <input type="text" id="institution" required></label><br><br>
+        <label>Degree: <input type="text" id="degree" required></label><br><br>
+        <label>Graduation Date: <input type="date" id="graduation-date" required></label><br><br>
+        <label>Skills: <textarea id="skills" required></textarea></label><br><br>
+        <label>Company: <input type="text" id="company" required></label><br><br>
+        <label>Position: <input type="text" id="position" required></label><br><br>
+        <label>Start Date: <input type="date" id="start-date" required></label><br><br>
+        <label>End Date: <input type="date" id="end-date"></label><br><br>
+        <label>Responsibilities: <textarea id="responsibilities" required></textarea></label><br><br>
+        <label>About Me: <textarea id="about-me"></textarea></label><br><br>
+       
+        <button type="button" id="generate-resume">Generate Resume</button>
+      </form>
+    </section>
+
+    <div id="resume-output" class="hidden">
+      <div id="resume-content"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

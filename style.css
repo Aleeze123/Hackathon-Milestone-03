@@ -1,0 +1,217 @@
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f2f5;
+}
+
+/* Resume Container Styling */
+
+/* Section Headers */
+.personal-info h1, .education h2, .work-experience h2, .skills h2 {
+    color: #333;
+    margin: 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    font-size: 24px;
+}
+
+/* Personal Information Section */
+.personal-info {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.about-me-heading {
+    color: #333;
+    background-color: #f1f1f1;
+    border: none;
+    font-size: 20px;
+    padding: 5px;
+    margin-top: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Profile Image Styling */
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+/* About Me Text Styling */
+.about-me-text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+/* Education Section */
+.education {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.education ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.education li {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.field, .year {
+    display: block;
+    font-size: 14px;
+    color: #333;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Work Experience Section */
+.work-experience {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.work-experience ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.work-experience li {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.company, .year {
+    display: block;
+    font-size: 14px;
+    color: #333;
+}
+
+.responsibilities {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Skills Section */
+.skills {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.skills-container {
+    margin-bottom: 50px;
+}
+
+.skill {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-name {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Button Styling */
+button {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #003366;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #002244;
+    transform: translateY(-2px);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .resume-container {
+        padding: 10px;
+    }
+
+    .personal-info, .education, .work-experience, .skills {
+        padding: 15px;
+    }
+
+    .personal-info h1, .education h2, .work-experience h2, .skills h2 {
+        font-size: 20px;
+    }
+
+    .education-container, .work-experience-container, .skills-container {
+        margin-bottom: 30px;
+    }
+
+    .skill {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .resume-container {
+        padding: 5px;
+    }
+
+    .personal-info, .education, .work-experience, .skills {
+        padding: 10px;
+    }
+
+    .personal-info h1, .education h2, .work-experience h2, .skills h2 {
+        font-size: 18px;
+    }
+
+    .education-container, .work-experience-container, .skills-container {
+        margin-bottom: 20px;
+    }
+
+    .skill {
+        font-size: 12px;
+        padding: 6px 8px;
+    }
+}

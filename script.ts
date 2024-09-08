@@ -13,18 +13,18 @@ const generateResumeHTML = async (): Promise<string> => {
     const nameInput = document.getElementById('name') as HTMLInputElement;
     const emailInput = document.getElementById('email') as HTMLInputElement;
     const phoneInput = document.getElementById('phone') as HTMLInputElement;
-    const addressInput = document.getElementById('address') as HTMLTextAreaElement;
-    const institutionInput = document.getElementById('institution') as HTMLInputElement;
+    const addressInput = document.getElementById('city') as HTMLTextAreaElement;
+    const institutionInput = document.getElementById('school') as HTMLInputElement;
     const degreeInput = document.getElementById('degree') as HTMLInputElement;
-    const graduationDateInput = document.getElementById('graduation-date') as HTMLInputElement;
+    const graduationDateInput = document.getElementById('date') as HTMLInputElement;
     const skillsInput = document.getElementById('skills') as HTMLTextAreaElement;
     const companyInput = document.getElementById('company') as HTMLInputElement;
     const positionInput = document.getElementById('position') as HTMLInputElement;
     const startDateInput = document.getElementById('start-date') as HTMLInputElement;
     const endDateInput = document.getElementById('end-date') as HTMLInputElement;
     const responsibilitiesInput = document.getElementById('responsibilities') as HTMLTextAreaElement;
-    const aboutInput = document.getElementById('about-me') as HTMLTextAreaElement;
-    const photoInput = document.getElementById('photo') as HTMLInputElement | null;
+    const aboutInput = document.getElementById('about me') as HTMLTextAreaElement;
+    const photoInput = document.getElementById('profile photo') as HTMLInputElement | null;
 
     // Basic validation
     if (!nameInput || !emailInput || !phoneInput || !addressInput ||

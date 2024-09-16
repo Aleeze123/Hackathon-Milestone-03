@@ -346,11 +346,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Navigation toggle script
-    const navToggle = document.getElementById('nav-toggle') as HTMLButtonElement;
-    const navLinks = document.getElementById('nav-links') as HTMLElement;
 
-    navToggle.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-    });
 });
